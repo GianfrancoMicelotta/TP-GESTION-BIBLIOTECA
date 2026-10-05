@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo - LibraryHub</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">LibraryHub</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="mi-cuenta.html">Mi cuenta</a>
+    <a href="carrito.html">Mis préstamos (2)</a>
+    <div class="selector">
+      <a href="admin.html">Administrador</a><a class="activo" href="catalogo.html">Usuario</a>
+    </div>
+   <button class="boton boton-claro boton-tema" type="button" title="Cambiar tema">
+    <img src="img/iconoTema.png" alt="Cambiar tema">
+   </button>
+  </header>
+
+  <main>
+    <h1>Catálogo</h1>
+    <p>Explorá los libros disponibles y pedí los que quieras leer.</p>
+    <input type="search" placeholder="Buscar por título o autor">
+    <button class="boton" type="button">Ver en tarjetas</button>
+    <button class="boton boton-claro" type="button">Ver en lista</button>
+
+    <section class="items">
+      <article class="tarjeta">
+        <div class="portada azul">R</div>
+        <div class="datos">
+          <h3>Rayuela</h3>
+          <p>Julio Cortázar - Novela</p>
+          <span class="estado">Disponible</span>
+          <p>
+            <button class="favorito activo" type="button">♥</button>
+            <button class="boton" type="button">Pedir prestado</button>
+          </p>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="portada verde">A</div>
+        <div class="datos">
+          <h3>El Aleph</h3>
+          <p>Jorge L. Borges - Cuentos</p>
+          <span class="estado">Disponible</span>
+          <p>
+            <button class="favorito" type="button">♡</button>
+            <button class="boton" type="button">Pedir prestado</button>
+          </p>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="portada violeta">F</div>
+        <div class="datos">
+          <h3>Ficciones</h3>
+          <p>Jorge L. Borges - Cuentos</p>
+          <span class="estado">Disponible</span>
+          <p>
+            <button class="favorito activo" type="button">♥</button>
+            <button class="boton" type="button">Pedir prestado</button>
+          </p>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="portada dorado">T</div>
+        <div class="datos">
+          <h3>El túnel</h3>
+          <p>Ernesto Sabato - Novela</p>
+          <span class="estado">Disponible</span>
+          <p>
+            <button class="favorito" type="button">♡</button>
+            <button class="boton" type="button">Pedir prestado</button>
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
