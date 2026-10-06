@@ -1,0 +1,294 @@
+/* Contenedor de la imagen y el texto */
+.portada {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  padding: 60px 48px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+.portada-imagen {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Sombra más oscura del lado izquierdo */
+.portada::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 20, 30, 0.85),
+    rgba(10, 20, 30, 0.15)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.portada-contenido {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  text-align: left;
+}
+
+.portada-contenido h1 {
+  margin: 0 0 24px;
+  color: white;
+  font-family: Georgia, serif;
+  font-size: clamp(44px, 6vw, 80px);
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.portada-contenido p {
+  margin: 0 0 32px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.portada-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.portada-acciones a {
+  display: inline-block;
+  padding: 15px 24px;
+  background-color: white;
+  color: #243e59;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.registro {
+  background-color: rgb(26, 30, 129);
+  padding: 50px;
+  border-radius: 0px;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.registro h1 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.registro p {
+  color: white;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.boton-registro {
+  background-color: white;
+  display: inline-block;
+  color: black;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  padding: 4px 6px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 20px, 5;
+}
+
+.boton-registro:hover {
+  transform: scale(1.05);
+  transition: transform 1s ease;
+  font-size: 16px;
+}
+
+.presentacion {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: start;
+  gap: 70px;
+
+  padding: 120px 48px;
+  background-color: #fcfcfa;
+  color: black;
+}
+
+.presentacion-titulo h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.presentacion-titulo h2 em {
+  font-weight: normal;
+}
+
+.presentacion-texto {
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.presentacion-intro {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+.presentacion-descripcion {
+  margin: 0 0 14px;
+  color: #65717c;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.9;
+}
+
+.presentacion-enlace {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #243e59;
+  color: #243e59;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.presentacion-enlace:hover {
+  min-width: 0;
+  transition: transform 0.3s ease;
+}
+
+.presentacion-enlace:hover {
+  transform: translateY(-6px);
+}
+
+.subtitulo-libros {
+  padding: 60px 48px;
+  background-color: #fcfcfa;
+  color: black;
+}
+
+.subtitulo-libros h2 {
+  margin: 0 0 32px;
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* Solo los libros se distribuyen en columnas */
+.estante-libro {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.libro img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+}
+
+.libro {
+  min-width: 0;
+  transition: transform 0.3s ease;
+}
+
+.libro:hover {
+  transform: translateY(-6px);
+}
+
+.libro p {
+  margin: 0px 30px 100;
+  color: #65717c;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 48px;
+  background-color: #fcfcfa;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: rgb(26, 30, 129);
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  letter-spacing: -3px;
+}
+.logo:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s ease;
+  font-size: 49px;
+}
+
+.nav-enlaces {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+}
+
+.nav-acciones {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.boton {
+  display: inline-block;
+  padding: 16px 24px;
+  border: 1px solid rgb(26, 30, 129);
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.boton-login:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  font-size: 13px;
+}
+
+.navegacion .boton-registro {
+  background-color: rgb(26, 30, 129);
+  color: white;
+}
+.boton-registro:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  font-size: 13px;
+}
