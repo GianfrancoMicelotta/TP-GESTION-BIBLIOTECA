@@ -8,7 +8,7 @@
   box-sizing: border-box;
   overflow: hidden;
 }
-
+/* Asegura que el contenido esté por encima de la imagen y la sombra */
 /* Imagen de fondo */
 .portada-imagen {
   position: absolute;
