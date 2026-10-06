@@ -217,6 +217,25 @@ img.portada {
 .favorito.activo {
   color: #c2384a;
 }
+#lista-favoritos .fila {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #cccccc;
+}
+#lista-favoritos .fila:last-child {
+  border-bottom: none;
+}
+#lista-favoritos .portada {
+  flex: 0 0 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 28px;
+}
+#lista-favoritos .datos {
+  flex: 1;
+}
 .estado {
   font-size: 13px;
   background-color: #dde5f5;
@@ -309,7 +328,7 @@ body.oscuro {
    justify-content: space-around;
    align-items: center;
    gap: 20px;
-   padding: 40px 20px;
+   padding: 24px 20px;
    background-color: #24407a;
    color: white;
 }
