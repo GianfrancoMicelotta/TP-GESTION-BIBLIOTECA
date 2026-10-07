@@ -1,5 +1,5 @@
 /* Contenedor de la imagen y el texto */
-.portada {
+.portada-principal {
   position: relative;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@
 }
 
 /* Sombra más oscura del lado izquierdo */
-.portada::before {
+.portada-principal::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -484,7 +484,7 @@ body {
     font-size: 12px;
   }
 
-  .portada {
+  .portada-principal {
     min-height: 440px;
     padding: 48px 24px;
   }
@@ -523,5 +523,208 @@ body {
     box-sizing: border-box;
     width: 100%;
     padding: 0;
+  }
+}
+
+body.pagina-seccion {
+  min-height: 100vh;
+  background-color: #fcfcfa;
+  color: #202124;
+}
+
+body.pagina-seccion > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  min-height: 76px;
+  padding: 10px 48px;
+  background-color: #fcfcfa;
+  border-bottom: 1px solid #e5e5e0;
+}
+
+body.pagina-seccion > header .logo {
+  flex: 0 0 auto;
+  margin-right: auto;
+  color: rgb(26, 30, 129);
+  font-family: Georgia, serif;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: -2px;
+  text-decoration: none;
+}
+
+body.pagina-seccion > header > a:not(.logo):not(.boton),
+body.pagina-seccion > header nav a {
+  color: rgb(26, 30, 129);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+body.pagina-seccion > header > a:not(.logo):not(.boton):hover,
+body.pagina-seccion > header nav a:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+body.pagina-seccion > header .selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+body.pagina-seccion > header .selector a {
+  padding: 8px 12px;
+  border: 1px solid rgb(26, 30, 129);
+  color: rgb(26, 30, 129);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+body.pagina-seccion > header .selector a.activo {
+  background-color: rgb(26, 30, 129);
+  color: white;
+}
+
+body.pagina-seccion > header .boton,
+body.pagina-seccion > header .nav-acciones .boton,
+body.pagina-seccion > header > a[href="login.html"] {
+  margin-top: 0;
+  padding: 8px 18px;
+  border: 1px solid rgb(26, 30, 129);
+  border-radius: 2px;
+  background-color: rgb(26, 30, 129);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body.pagina-seccion > header .boton-claro,
+body.pagina-seccion > header > a[href="login.html"],
+body.pagina-seccion > header .boton-login {
+  background-color: transparent;
+  color: rgb(26, 30, 129);
+}
+
+body.pagina-seccion > header .boton-tema {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+body.pagina-seccion > header .boton-tema img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+body.pagina-seccion main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 44px 48px;
+}
+
+body.pagina-seccion main > h1,
+body.pagina-seccion main > h2,
+body.pagina-seccion main section > h1,
+body.pagina-seccion main section > h2 {
+  color: #202124;
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+body.pagina-seccion main > h1 {
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+body.pagina-seccion main > p {
+  color: #65717c;
+  line-height: 1.7;
+}
+
+body.pagina-seccion .caja {
+  border: 1px solid #e5e5e0;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 8px 24px rgba(32, 33, 36, 0.06);
+}
+
+body.pagina-seccion .login {
+  width: min(100% - 40px, 520px);
+  max-width: 520px;
+  box-sizing: border-box;
+  margin: 44px auto;
+  padding: 32px;
+}
+
+body.pagina-seccion input,
+body.pagina-seccion select,
+body.pagina-seccion textarea {
+  min-height: 42px;
+  border: 1px solid #d5d7dc;
+  border-radius: 3px;
+  background-color: #fff;
+  font: inherit;
+}
+
+body.pagina-seccion label {
+  color: #343a40;
+  font-size: 15px;
+}
+
+body.pagina-seccion .boton {
+  border: 1px solid rgb(26, 30, 129);
+  border-radius: 2px;
+  background-color: rgb(26, 30, 129);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body.pagina-seccion .boton-claro {
+  background-color: white;
+  color: rgb(26, 30, 129);
+}
+
+body.pagina-seccion .portada {
+  border-radius: 2px;
+}
+
+body.pagina-seccion #footer-principal {
+  padding-top: 90px;
+  background-color: #24407a;
+  color: white;
+}
+
+body.pagina-seccion #footer-principal a {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  body.pagina-seccion > header {
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  body.pagina-seccion > header .logo {
+    flex-basis: 100%;
+    margin-right: 0;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  body.pagina-seccion main {
+    padding: 32px 20px;
+  }
+
+  body.pagina-seccion .login {
+    width: 100%;
+    margin: 24px auto;
+    padding: 24px;
+  }
+
+  body.pagina-seccion #footer-principal {
+    padding-top: 75px;
   }
 }
