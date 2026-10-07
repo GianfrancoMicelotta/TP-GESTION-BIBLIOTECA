@@ -74,6 +74,13 @@
   text-decoration: none;
 }
 
+.portada-acciones a:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  font-size: 16px;
+  transform: translateY(-2px);
+}
+
 .registro {
   background-color: rgb(26, 30, 129);
   padding: 50px;
@@ -111,7 +118,7 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  margin: 20px, 5;
+  margin: 20px 5px;
 }
 
 .boton-registro:hover {
@@ -241,17 +248,19 @@ body {
 .navegacion a {
   text-decoration: none;
   color: rgb(26, 30, 129);
+  margin-left: 20px;
 }
 
 .logo {
   font-family: Georgia, serif;
   font-size: 48px;
   letter-spacing: -3px;
+  margin: 0%;
 }
 .logo:hover {
-  transform: scale(0.95);
+  transform: scale(0.85);
   transition: transform 0.5s ease;
-  font-size: 49px;
+  font-size: 48px;
 }
 
 .nav-enlaces {
@@ -261,13 +270,40 @@ body {
   font-size: 15px;
 }
 
+.nav-nosotros:hover {
+  min-width: 0;
+  transition: transform 0.3s ease;
+  transform: translateY(-4px);
+}
+
+.nav-contacto:hover {
+  min-width: 0;
+  transition: transform 0.3s ease;
+  transform: translateY(-4px);
+}
+
 .nav-acciones {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0px;
   margin-left: auto;
 }
 
+.boton-login:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s ease;
+  font-size: 14px;
+}
+
+.navegacion .boton-registro {
+  background-color: rgb(26, 30, 129);
+  color: white;
+}
+.boton-registro:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s ease;
+  font-size: 14px;
+}
 .boton {
   display: inline-block;
   padding: 16px 24px;
@@ -277,29 +313,37 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.boton-login:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease;
-  font-size: 13px;
+
+#footer-principal .logo-letra {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  z-index: 1;
+  width: auto;
+  padding: 0;
+  text-align: left;
+  font-family: Georgia, serif;
 }
 
-.navegacion .boton-registro {
-  background-color: rgb(26, 30, 129);
-  color: white;
-}
-.boton-registro:hover {
-  transform: scale(1.05);
+.logo-letra:hover {
+  transform: scale(1.2);
   transition: transform 0.5s ease;
-  font-size: 13px;
+  font-size: 14px;
+}
+
+.logo-letra a {
+  color: inherit;
+  text-decoration: none;
 }
 
 #footer-principal {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
-  padding: 24px 20px;
+  padding: 90px 20px 24px;
   background-color: #fff;
   color: #000;
 }
