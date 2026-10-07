@@ -238,6 +238,7 @@ body {
 }
 
 .navegacion {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -396,18 +397,23 @@ body {
   margin-right: 8px;
 }
 
+/*
 @media (max-width: 600px) {
   #footer-principal div {
     width: 100%;
   }
 }
+*/
 
 .boton-inicio {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 1000;
   display: block;
   width: fit-content;
-  margin: 20px 20px 24px auto;
   padding: 10px 10px 10px 10px;
-  background-color: #1a1e81;
+  background-color: black;
   color: white;
   text-decoration: none;
   border-radius: 80px;
@@ -418,4 +424,98 @@ body {
   transform: scale(1.05);
   transition: transform 0.5s ease;
   font-size: 15px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .presentacion {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 80px 32px;
+  }
+
+  .estante-libro {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .navegacion {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 24px;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .navegacion {
+    justify-content: center;
+    padding: 12px 16px;
+  }
+
+  .logo,
+  .nav-enlaces,
+  .nav-acciones {
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 36px;
+  }
+
+  .navegacion a {
+    margin-left: 0;
+  }
+
+  .nav-acciones {
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .boton {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .portada {
+    min-height: 440px;
+    padding: 48px 24px;
+  }
+
+  .portada-contenido p {
+    font-size: 16px;
+  }
+
+  .portada-acciones {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .presentacion {
+    padding: 60px 24px;
+    gap: 24px;
+  }
+
+  .subtitulo-libros {
+    padding: 40px 24px;
+  }
+
+  .estante-libro {
+    grid-template-columns: 1fr;
+  }
+
+  .registro {
+    padding: 40px 24px;
+  }
+
+  #footer-principal {
+    padding: 75px 16px 24px;
+  }
+
+  #footer-principal div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+  }
 }
