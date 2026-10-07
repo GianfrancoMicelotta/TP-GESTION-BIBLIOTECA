@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="pagina-seccion">
-  <header class="navegacion">
-    <a class="logo" href="index.html">libraryHub</a>
-    <div class="nav-acciones">
-      <a class="boton boton-login" href="login.html">Iniciar sesión</a>
-      <a class="boton boton-registro" href="registro.html">Registrarse</a>
-    </div>
+  <header>
+    <a class="logo" href="index.html">LibraryHub</a>
+    <button class="boton boton-claro boton-tema" type="button" title="Cambiar tema">
+    <img src="img/iconoTema.png" alt="Cambiar tema">
+</button>
+    <a href="login.html">Iniciar sesión</a>
+    <a class="boton" href="registro.html">Registrarse</a>
   </header>
   <main>
     <section class="caja login">
@@ -34,9 +35,14 @@
         <select id="perfil" disabled>
           <option>Administrador</option>
         </select>
-        <button class="boton" type="button">Crear administrador</button>
+        <a class="boton" href="admin.html">Crear administrador</a>
       </form>
     </section>
   </main>
+  <footer id="footer-chiquito">
+         <div>
+            <h4>2026 Gestor de Biblioteca - PW1-20262C</h4>
+         </div>
+  </footer>
 </body>
 </html>

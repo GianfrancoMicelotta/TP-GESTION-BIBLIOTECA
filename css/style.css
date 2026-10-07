@@ -410,6 +410,17 @@ body {
   }
 }
 */
+#footer-chiquito {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 7px;
+  padding: 2px 2px 2px;
+  background-color: #24407a;
+  color: white;
+}
 
 .boton-inicio {
   position: fixed;
