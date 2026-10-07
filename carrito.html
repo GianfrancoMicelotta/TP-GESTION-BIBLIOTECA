@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mis préstamos - LibraryHub</title>
+  <title>Mis préstamos - libraryHub</title>
   <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/b3f407f311.js" crossorigin="anonymous"></script>
 </head>
 <body class="pagina-seccion">
   <header>
-    <a class="logo" href="catalogo.html">LibraryHub</a>
+    <a class="logo" href="catalogo.html">libraryHub</a>
     <a href="catalogo.html">Catálogo</a>
     <a href="mi-cuenta.html">Mi cuenta</a>
-    <a href="carrito.html">Mis préstamos (2)</a>
+    <a href="favoritos.html">Favoritos</a>
     <div class="selector">
       <a href="admin.html">Administrador</a><a class="activo" href="catalogo.html">Usuario</a>
     </div>
@@ -22,8 +22,8 @@
   </header>
 
   <main>
-    <h1>Mis préstamos</h1>
-    <p>Revisá los libros que vas a retirar antes de confirmar.</p>
+    <h1>Mi carrito</h1>
+    <p>Revisá los libros que vas a comprar antes de confirmar.</p>
     <section class="caja">
       <div class="fila">
         <div class="portada azul">R</div>
@@ -41,11 +41,9 @@
         </div>
         <button class="boton boton-claro" type="button">Quitar</button>
       </div>
-      <form>
-        <label for="devolucion">Devolución estimada</label>
-        <input type="date" id="devolucion">
-        <button class="boton" type="button">Confirmar préstamo (2 libros)</button>
-      </form>
+      
+        <button class="boton" type="button">Confirmar compra (2 libros)</button>
+      
     </section>
   </main>
   <footer id="footer-principal">
