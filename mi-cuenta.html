@@ -3,59 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi cuenta - LibraryHub</title>
-  <script src="https://kit.fontawesome.com/b3f407f311.js" crossorigin="anonymous"></script>
+  <title>Mi cuenta - libraryHub</title>
   <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/b3f407f311.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <header>
-  <a class="logo" href="index.html">LibraryHub <i class="fa-solid fa-book-open"></i></a>
-
-  <nav>
+<body class="pagina-seccion">
+    <header>
+    <a class="logo" href="catalogo.html">libraryHub</a>
     <a href="catalogo.html">Catálogo</a>
-    <a href="mi-cuenta.html">Mi cuenta</a>
-    <a href="carrito.html">Mis préstamos (2)</a>
-  </nav>
-  <div class="acciones">
+    <a href="favoritos.html">Favoritos</a>
+    <a href="carrito.html">Mi carrito (2)</a>
     <div class="selector">
       <a href="admin.html">Administrador</a><a class="activo" href="catalogo.html">Usuario</a>
     </div>
     <button class="boton boton-claro boton-tema" type="button" title="Cambiar tema">
-      <img src="img/iconoTema.png" alt="Cambiar tema">
-    </button>
-    
-  </div>
-</header>
+    <img src="img/iconoTema.png" alt="Cambiar tema">
+    <a href="index.html">Salir</a>
+  </header>
 
   <main>
-    <h1>Mi cuenta</h1>
+    <h1>Datos del usuario</h1>
     <section class="caja">
-      <p><strong>Nombre:</strong> Lucía Fernández</p>
+      <p><strong>Nombre:</strong> Lucía</p>
+      <p><strong>Apellido:</strong> Fernández</p>
       <p><strong>Usuario:</strong> lucia.f</p>
-      <p><strong>Correo:</strong> lucia@ejemplo.com</p>
-      <p><strong>Perfil:</strong> Administrador</p>
+      <p><strong>Correo:</strong> luciafer@gmail.com</p>
+      <p><strong>Perfil:</strong> Usuario</p>
     </section>
-
-    <h2>Mis favoritos</h2>
-    <section class="items">
-      <article class="tarjeta">
-        <div class="portada azul">R</div>
-        <div class="datos">
-          <h3>Rayuela</h3>
-          <p>Julio Cortázar - Novela</p>
-          <button class="favorito activo" type="button">♥</button>
-        </div>
-      </article>
-
-      <article class="tarjeta">
-        <div class="portada violeta">F</div>
-        <div class="datos">
-          <h3>Ficciones</h3>
-          <p>Jorge L. Borges - Cuentos</p>
-          <button class="favorito activo" type="button">♥</button>
-        </div>
-      </article>
-    </section>
+    <button class="boton" type="button">Eliminar cuenta</button>
+    
   </main>
+  <footer id="footer-principal">
+      <div>
+         <h4>Contactanos</h4>
+         <p>Email: contacto@libraryhub.com</p>
+        <p>Email: soportelibraryhub@gmail.com</p>
+         <img src="img/qr.png" alt="Código QR">
+      </div>
+      <a id="Contácto"> </a>
+      <div>
+         <h4>Redes Sociales</h4>
+         <ul>
+            <li><a href="https://www.unlam.edu.ar/"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.unlam.edu.ar/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.unlam.edu.ar/"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+         </ul>
+      </div>
+   </footer>
 </body>
 </html>
