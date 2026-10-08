@@ -1,38 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Iniciar sesión - libraryHub</title>
-  <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body class="pagina-seccion">
-  <header>
-  <a class="logo" href="index.html">libraryHub</a>
-  <a>¿No tienes cuenta?</a>
-    <a class="boton" href="registro.html">Registrarse</a>
-    <button class="boton boton-claro boton-tema" type="button" title="Cambiar tema">
-    <img src="img/iconoTema.png" alt="Cambiar tema">
-</button>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iniciar sesión - libraryHub</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body class="pagina-seccion">
+    <header>
+      <a class="logo" href="index.html">libraryHub</a>
+      <a>¿No tienes cuenta?</a>
+      <a class="boton" href="registro.html">Registrarse</a>
+      <button
+        class="boton boton-claro boton-tema"
+        type="button"
+        title="Cambiar tema"
+      >
+        <img src="img/iconoTema.png" alt="Cambiar tema" />
+      </button>
+    </header>
 
-  <main>
-    <section class="caja">
-      <h1>Iniciar sesión</h1>
-      <form>
-        <label for="usuario">Usuario o correo</label>
-        <input type="text" id="usuario">
-        <label for="clave">Contraseña</label>
-        <input type="password" id="clave">
-        <a  class="boton" href="catalogo.html">Ingresar</a>
-      </form>
-      <p>¿No hay administrador? <a href="registro-admin.html">Crear el primer administrador</a></p>
-    </section>
-  </main>
-  <footer id="footer-chiquito">
-         <div>
-            <h4>2026 Gestor de Biblioteca - PW1-20262C</h4>
-         </div>
-  </footer>
-</body>
+    <main>
+      <section class="caja">
+        <h1>Iniciar sesión</h1>
+        <form>
+          <label for="usuario">Usuario o correo</label>
+          <input
+            type="text"
+            id="usuario"
+            placeholder="Ingrese su usuario o correo"
+          />
+          <label for="clave">Contraseña</label>
+          <input
+            type="password"
+            id="clave"
+            placeholder="Ingrese su contraseña"
+          />
+          <a class="boton" href="catalogo.html">Ingresar</a>
+        </form>
+        <p>
+          ¿No hay administrador?
+          <a href="registro-admin.html">Crear el primer administrador</a>
+        </p>
+      </section>
+    </main>
+    <footer id="footer-chiquito">
+      <div>
+        <h4>2026 Gestor de Biblioteca - PW1-20262C</h4>
+      </div>
+    </footer>
+  </body>
 </html>
