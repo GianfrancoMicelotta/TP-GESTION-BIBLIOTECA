@@ -544,7 +544,7 @@ body.pagina-seccion main > p {
   padding: 20px;
   margin-bottom: 20px;
 }
-  
+
 .caja .boton {
   margin: 12px;
   padding: 8px 16px;
@@ -842,18 +842,13 @@ body.pagina-seccion #footer-principal a {
    */
 
 #footer-chiquito {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 7px;
   padding: 2px;
-  margin: 0;
   background-color: #24407a;
   color: white;
 }
