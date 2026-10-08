@@ -547,6 +547,11 @@ body.pagina-seccion main > p {
   padding: 20px;
   margin-bottom: 20px;
 }
+  
+.caja .boton {
+  margin: 12px;
+  padding: 8px 16px;
+}
 
 body.pagina-seccion .caja {
   border: 1px solid #e5e5e0;
@@ -1077,4 +1082,3 @@ body.oscuro {
     width: 100%;
   }
 }
-
