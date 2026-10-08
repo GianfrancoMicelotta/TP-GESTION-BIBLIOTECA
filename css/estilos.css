@@ -1,4 +1,3 @@
-
 /* 
    ESTILOS GENERALES
     */
@@ -16,7 +15,6 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
-
 
 /* 
    NAVEGACIÓN PRINCIPAL - PORTADA
@@ -42,6 +40,7 @@ body {
   font-size: 48px;
   letter-spacing: -3px;
   margin: 0;
+  transition: transform 0.5s ease;
 }
 
 .logo:hover {
@@ -55,6 +54,7 @@ body {
   align-items: center;
   gap: 12px;
   font-size: 15px;
+  transition: transform 0.3s ease;
 }
 
 .nav-nosotros:hover,
@@ -70,8 +70,8 @@ body {
   align-items: center;
   gap: 0;
   margin-left: auto;
+  transition: transform 0.3s ease;
 }
-
 
 /* 
    BOTONES
@@ -81,7 +81,7 @@ body {
   display: inline-block;
   padding: 8px 24px;
   border: 1px solid rgb(26, 30, 129);
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: rgb(26, 30, 129);
   color: white;
   font-size: 14px;
@@ -100,11 +100,12 @@ body {
   transform: scale(0.95);
   transition: transform 0.5s ease;
   font-size: 14px;
+  box-shadow: 0 6px 10px rgb(54, 44, 44);
 }
 .navegacion .boton-login {
   background-color: transparent;
   color: rgb(26, 30, 129);
-  border: 1px solid rgb;
+  border: 1px solid rgb(26, 30, 129);
 }
 
 .navegacion .boton-registro {
@@ -113,9 +114,10 @@ body {
 }
 
 .navegacion .boton-registro:hover {
-  transform: scale(1.2);
+  transform: scale(0.95);
   transition: transform 0.4s ease;
-  font-size: 15px;
+  font-size: 14px;
+  box-shadow: 0 6px 10px rgb(54, 44, 44);
 }
 
 .boton-tema {
@@ -134,7 +136,6 @@ body {
 header .boton {
   margin-top: 0;
 }
-
 
 /* 
    PORTADA PRINCIPAL
@@ -210,13 +211,14 @@ header .boton {
   font-family: Arial, sans-serif;
   font-weight: bold;
   text-decoration: none;
+  transition: transform 0.5s ease;
 }
 
 .portada-acciones a:hover {
   transform: translateY(-2px);
   transition: transform 0.5s ease;
+  box-shadow: 0 6px 10px rgb(0, 0, 0);
 }
-
 
 /* 
    PRESENTACIÓN
@@ -274,13 +276,14 @@ header .boton {
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .presentacion-enlace:hover {
   transform: translateY(-6px);
   transition: transform 0.3s ease;
+  text-shadow: 2px 4px 10px #747373;
 }
-
 
 /* 
    SECCIÓN DE LIBROS DE LA PORTADA
@@ -326,7 +329,6 @@ header .boton {
   color: #65717c;
   text-align: center;
 }
-
 
 /* 
    SECCIÓN DE REGISTRO
@@ -377,7 +379,6 @@ header .boton {
   font-size: 16px;
 }
 
-
 /* 
    BOTÓN VOLVER AL INICIO
     */
@@ -402,7 +403,6 @@ header .boton {
   transition: transform 0.5s ease;
   font-size: 15px;
 }
-
 
 /* 
    PÁGINAS INTERNAS - HEADER
@@ -468,7 +468,6 @@ body.pagina-seccion > header .selector a.activo {
   color: white;
 }
 
-
 /* 
    HEADER / BOTONES DE PÁGINAS INTERNAS
     */
@@ -506,7 +505,6 @@ body.pagina-seccion > header .boton-tema img {
   height: 30px;
 }
 
-
 /* 
    CONTENIDO DE PÁGINAS INTERNAS
     */
@@ -534,7 +532,6 @@ body.pagina-seccion main > p {
   color: #65717c;
   line-height: 1.7;
 }
-
 
 /* 
    CAJAS Y FORMULARIOS
@@ -596,7 +593,6 @@ body.pagina-seccion textarea {
   background-color: #fff;
   font: inherit;
 }
-
 
 /* 
    CATÁLOGO
@@ -673,9 +669,6 @@ img.portada {
   border-radius: 10px;
 }
 
-
-
-
 /* 
    FAVORITOS Y FILAS
     */
@@ -723,7 +716,6 @@ img.portada {
   flex: 1;
 }
 
-
 /* 
    TABLAS
     */
@@ -743,7 +735,6 @@ td {
   padding: 8px;
   border-bottom: 1px solid #cccccc;
 }
-
 
 /* 
    FOOTER PRINCIPAL
@@ -841,7 +832,6 @@ body.pagina-seccion #footer-principal a {
   color: white;
 }
 
-
 /* 
    FOOTER PEQUEÑO
    */
@@ -862,7 +852,6 @@ body.pagina-seccion #footer-principal a {
   background-color: #24407a;
   color: white;
 }
-
 
 /* 
    MODO OSCURO
@@ -901,7 +890,6 @@ body.oscuro {
   border-top: 1px solid #333333;
 }
 
-
 /* 
    SECCIÓN INICIO
     */
@@ -923,7 +911,6 @@ body.oscuro {
 .centrado {
   text-align: center;
 }
-
 
 /* 
    RESPONSIVE - TABLET
@@ -952,7 +939,6 @@ body.oscuro {
     padding: 15px 24px;
   }
 }
-
 
 /* 
    RESPONSIVE - CELULAR
@@ -1077,4 +1063,3 @@ body.oscuro {
     width: 100%;
   }
 }
-
