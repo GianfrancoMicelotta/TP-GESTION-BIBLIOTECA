@@ -6,9 +6,9 @@
   box-sizing: border-box;
 }
 
-html {
+/*html {
   scroll-behavior: smooth;
-}
+}*/
 
 body {
   margin: 0;
@@ -937,6 +937,12 @@ body.oscuro {
     flex-wrap: wrap;
     gap: 12px;
     padding: 15px 24px;
+  }
+}
+/**/
+@media (min-width: 701px) and (max-width: 900px) {
+  #footer-principal {
+    justify-content: space-between;
   }
 }
 
